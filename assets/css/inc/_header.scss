@@ -1,0 +1,93 @@
+.top-bar {
+	background: $color-sky;
+	padding: 20px 0;
+}
+
+:is(.profile-nav, .language) ul {
+	inset: calc(100% + 10px) 100% auto 0px !important;
+	transform: translateX(-60%) !important;
+	white-space: nowrap;
+	background: $white;
+	min-width: 200px;
+	border-radius: 8px;
+	box-shadow: 0 10px 15px -8px rgba(0,0,0,.15);
+	padding: 15px 0;
+	border: none;
+
+	&::before {
+		position: absolute;
+		content: '';
+		border-bottom: 10px solid $white;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		bottom: 100%;
+		right: 10px;
+	}
+
+	a {
+		display: block;
+		padding: 12px 15px;
+		font-size: 16px;
+		font-weight: 500;
+		border-radius: 4px;
+		color: $theme-color;
+
+		span {
+			display: inline-block;
+			margin-left: 10px;
+		}
+		&:hover {
+			background: $theme-color;
+			color: $white;
+		}
+	}
+}
+
+.profile-nav > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 14px;
+	border-radius: 20px;
+	background: $theme-color;
+}
+
+.language {
+	margin-right: 14px;
+
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 8px 14px;
+		border-radius: 20px;
+		background: $white;
+
+		i {
+			&::before {
+				font-size: 14px;
+				font-weight: 700 !important;
+			}
+		}
+	}
+
+	ul {
+		padding: 5px 0;
+		min-width: 100px;
+		transform: translateX(-10%) !important;
+
+		a {
+			display: block;
+			padding: 5px 15px;
+			font-size: 14px;
+			font-weight: 500;
+			border-radius: 4px;
+			color: $theme-color;
+	
+			&:hover {
+				background: $theme-color;
+				color: $white;
+			}
+		}
+	}
+}
