@@ -1,10 +1,15 @@
-@media (min-width:1440px) {
-	.container,
-	.container-lg,
-	.container-md,
-	.container-sm,
-	.container-xl,
-	.container-xxl {
-		 max-width: 1440px
+@mixin screen_1400px {
+	@media(max-width: 1400px) {
+		@content;
+	}
+}
+@mixin screen_1199px {
+	@media(max-width: 1199px) {
+		@content;
+	}
+}
+@mixin screen_992px {
+	@media(max-width: 992px) {
+		@content;
 	}
 }

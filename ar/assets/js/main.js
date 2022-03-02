@@ -4,7 +4,6 @@ const $$ = (selectors)=>document.querySelectorAll(selectors);
 
 
 (function() {
-  $('.header-middle').style.marginTop = $('.top-bar').clientHeight + 'px';
   $('.searchBtn').addEventListener('click', function(e) {
     e.preventDefault();
     $('.search-form').classList.add('openForm');
@@ -29,7 +28,6 @@ const $$ = (selectors)=>document.querySelectorAll(selectors);
       this.classList.toggle('scheduled');
     })
   });
-
   $$('.the-doc-card').forEach(function(e) {
     let scheduleBtn = e.querySelector('.schedule-btn');
     let closeSchedule = e.querySelector('.close-schedule a');

@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Tajawal", sans-serif;
   background: #F9F9F9;
   overflow-x: hidden !important;
 }
@@ -64,7 +64,7 @@ li {
 /* primary reset end */
 /* fonts start */
 .f1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Tajawal", sans-serif;
 }
 
 .fw-3 {
@@ -153,11 +153,6 @@ li {
 .top-bar {
   background: #D0EFFF;
   padding: 20px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9000;
 }
 
 .top-info {
@@ -433,32 +428,14 @@ li {
   margin: 20px 0;
 }
 
-@media (max-width: 1400px) {
-  .main-content {
-    width: auto;
-  }
-}
-
 .aside-left {
   width: 20%;
   margin-top: 20px;
 }
 
-@media (max-width: 1400px) {
-  .aside-left {
-    width: auto;
-  }
-}
-
 .aside-right {
   width: 25%;
   margin-top: 20px;
-}
-
-@media (max-width: 1400px) {
-  .aside-right {
-    width: auto;
-  }
 }
 
 .related-offer-btn {
