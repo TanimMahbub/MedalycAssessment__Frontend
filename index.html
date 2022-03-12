@@ -31,14 +31,14 @@
 		<div class="top-bar">
 			<div class="container-xxl px-xl-4">
 				<div class="row justify-content-between align-items-center">
-					<div class="col-2">
+					<div class="col-lg-2 col-6 order-1">
 						<div class="logo">
 							<a href="#">
 								<img src="assets/img/site-logo.png" alt="site logo">
 							</a>
 						</div>
 					</div>
-					<div class="col-7 d-flex justify-content-xl-end justify-content-center">
+					<div class="col-lg-7 order-lg-2 order-3 d-flex justify-content-xl-end justify-content-center mt-3 mt-lg-0">
 						<div class="top-info d-flex align-items-center justify-content-center">
 							<form class="search-form">
 								<input type="search" class="form-control border-0 bg-transparent" placeholder="Search here">
@@ -46,7 +46,7 @@
 									<i class="bi bi-x"></i>
 								</button>
 							 </form>
-							<div class="swiper infoSlide">
+							<div class="swiper infoSlide position-relative">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<a href="#">
@@ -66,7 +66,7 @@
 											<span>Jan, 31 - Feb, 15</span>
 										</a>
 									</div>
-									<div class="swiper-slide">
+									<div class="swiper-slide before-search">
 										<a href="#">
 											<img src="assets/img/icons/security.svg" alt="security">
 											<span>All Insurances</span>
@@ -78,12 +78,18 @@
 										</a>
 									</div>
 								</div>
+								<span class="topinfo-nav topinfo-prev">
+									<i class="bi bi-chevron-left"></i>
+								</span>
+								<span class="topinfo-nav topinfo-next">
+									<i class="bi bi-chevron-right"></i>
+								</span>
 							</div>
 						</div>
 					</div>
-					<div class="col-3">
+					<div class="col-lg-3 col-6 order-lg-3 order-2">
 						<div class="top-nav-area d-flex justify-content-end align-items-center">
-							<div class="language dropdown position-relative">
+							<div class="language dropdown position-relative d-none d-lg-block">
 								<a href="#" id="lang" data-bs-toggle="dropdown">
 									<img src="assets/img/icons/glob.svg" alt="glob icon">
 									<span class="d-inline-block mx-2">Eng</span>
@@ -176,7 +182,7 @@
 		<div class="container-xxl px-xl-4">
 			<div class="row">
 				<!-- aside-left start -->
-				<div class="col-3 aside-left">
+				<div class="col-lg-3 aside-left">
 					<aside>
 						<a href="#" class="related-offer-btn">
 							<span class="d-flex justify-content-center w-100">
@@ -387,7 +393,7 @@
 				<!-- aside-left end -->
 
 				<!-- main-content start -->
-				<div class="col-6 main-content">
+				<div class="col-lg-6 main-content">
 					<div class="the-doc-card">
 						<div class="the-card-body d-flex justify-content-between">
 							<figure>
@@ -1440,7 +1446,7 @@
 				<!-- main-content end -->
 
 				<!-- aside-right start -->
-				<div class="col-3 aside-right">
+				<div class="col-lg-3 aside-right">
 					<aside>
 						<figure>
 							<img src="assets/img/map.png" alt="map">
